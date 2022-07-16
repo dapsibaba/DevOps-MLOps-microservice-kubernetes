@@ -1,4 +1,3 @@
-<include a CircleCI status badge, here>
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/dapsibaba/DevOps-MLOps-microservice-kubernetes/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/dapsibaba/DevOps-MLOps-microservice-kubernetes/tree/master)
 
 ## Project Overview
