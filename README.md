@@ -26,13 +26,11 @@ You may sign up on [CircleCI.com](https://circleci.com/signup/) with your GitHub
 
 ---
 
-### D. Setup the Environment
+### B. Setup the Environment
 
 To run the project code, you'll have to set up a virtual environment with the project dependencies. All of the following instructions are to be completed via a terminal/command line prompt. 
 
-### E. Create and Activate an Environment
-
-#### E.1. Git and version control
+#### B.1. Git and version control
 These instructions also assume you have `git` installed for working with Github from a terminal window, but if you do not, you can download that first from this [Github installation page](https://www.atlassian.com/git/tutorials/install-git).
 
 **Now, you're ready to create your local environment!**
@@ -60,14 +58,14 @@ make install
 ```
 ---
 
-#### E.2. Other libraries that are needed
+#### B.2. Other libraries that are needed
 
 While you still have your `.devops` environment activated, you will still need to install:
 * Docker
 * Hadolint
 * Kubernetes ([Minikube](https://kubernetes.io/docs/tasks/tools/install-minikube/) if you want to run Kubernetes locally)
 
-#### E.3. Docker
+#### B.3. Docker
 
 You will need to use Docker to build and upload a containerized application. If you already have this installed and created a docker account, you may skip this step.
 
@@ -77,7 +75,7 @@ You will need to use Docker to build and upload a containerized application. If 
 
 3. After installation, you can verify that you’ve successfully installed docker by printing its version in your terminal: `docker --version`
 
-#### E.4. Run Lint Checks
+#### B.4. Run Lint Checks
 
 This project also must pass two lint checks; `hadolint` checks the Dockerfile for errors and `pylint` checks the `app.py` source code for errors.
 
