@@ -1,0 +1,28 @@
+<paste log output from Kubernetes-mediated prediction, here>
+
+Error from server (AlreadyExists): pods "mlapp" already exists
+NAME    READY   STATUS    RESTARTS   AGE
+mlapp   1/1     Running   0          15m
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 281-194-984
+127.0.0.1 - - [15/Jul/2022 20:44:32] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jul/2022 20:44:37] "GET / HTTP/1.1" 200 -
+[2022-07-15 20:46:23,476] INFO in app: JSON payload: 
+{'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
+[2022-07-15 20:46:23,486] INFO in app: Inference payload DataFrame: 
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2022-07-15 20:46:23,491] INFO in app: Scaling Payload: 
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2022-07-15 20:46:23,494] INFO in app: Output prediction value: [20.35373177134412]
+127.0.0.1 - - [15/Jul/2022 20:46:23] "POST /predict HTTP/1.1" 200 -
