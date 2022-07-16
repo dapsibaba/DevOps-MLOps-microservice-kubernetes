@@ -26,3 +26,10 @@ Forwarding from [::1]:8000 -> 80
 0     0  6.575  296.0     15.3  396.9   4.98
 [2022-07-15 20:46:23,494] INFO in app: Output prediction value: [20.35373177134412]
 127.0.0.1 - - [15/Jul/2022 20:46:23] "POST /predict HTTP/1.1" 200 -
+
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
